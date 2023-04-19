@@ -12,18 +12,19 @@ const Firstpost = () => {
     <Layout>
       <Head>
         <title>first-post</title>
-        <Script
+
+      </Head>
+      <h1>
+        <Link href="/">Back to Home</Link>
+      </h1>
+      <Image src="/Images/profile.jpg" height={144} width={144} alt='profile-img'/>
+      <Script
         src="https://connect.facebook.net/en_US/sdk.js"
         strategy="lazyOnload"
         onLoad={() =>
           console.log(`script loaded correctly, window.FB has been populated`)
         }
       />
-      </Head>
-      <h1>
-        <Link href="/">Back to Home</Link>
-      </h1>
-      <Image src="/Images/profile.jpg" height={144} width={144} />
     </Layout>
   )
 }
